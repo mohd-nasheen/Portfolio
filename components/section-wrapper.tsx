@@ -62,7 +62,7 @@ export function SectionWrapper({ id, label, title, intro, children, showPortrait
               >
                 <div className="relative h-full w-full overflow-hidden rounded-full">
                   <Image
-                    src="/nasheen-profile.jfif"
+                    src="/nasheen-profile.jpg"
                     alt="Mohamed Nasheen portrait"
                     fill
                     sizes="160px"

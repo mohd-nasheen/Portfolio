@@ -120,7 +120,7 @@ export function FloatingNavbar() {
             }}
           >
             <Image
-              src="/nasheen-profile.jfif"
+              src="/nasheen-profile.jpg"
               alt="Nasheen profile portrait"
               fill
               sizes="36px"

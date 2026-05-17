@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   description:
     "Single-page portfolio for a technical support and implementation engineer focused on SaaS, APIs, automation, and AI-enabled product delivery.",
   icons: {
-    icon: "/nasheen-profile.jfif",
-    shortcut: "/nasheen-profile.jfif",
-    apple: "/nasheen-profile.jfif"
+    icon: "/nasheen-profile.jpg",
+    shortcut: "/nasheen-profile.jpg",
+    apple: "/nasheen-profile.jpg"
   },
   metadataBase: new URL("https://example.com"),
   openGraph: {
