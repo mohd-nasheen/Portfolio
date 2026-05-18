@@ -39,6 +39,8 @@ type Palette = {
   fillG: number;
   fillB: number;
   glow: string;
+  alphaBoost: number;
+  glowBoost: number;
 };
 
 export function AmbientParticles({
@@ -80,18 +82,22 @@ export function AmbientParticles({
       const isLight = root.getAttribute("data-theme") === "light";
       return isLight
         ? {
-            // Premium muted navy-blue for light mode visibility.
-            fillR: 46,
-            fillG: 70,
-            fillB: 112,
-            glow: "rgba(88, 126, 192, 0.42)"
+            // Slightly deeper blue-gray for better light-mode legibility.
+            fillR: 42,
+            fillG: 65,
+            fillB: 102,
+            glow: "rgba(88, 132, 204, 0.52)",
+            alphaBoost: 1.14,
+            glowBoost: 1.22
           }
         : {
             // Soft cyan-blue for dark mode.
             fillR: 170,
             fillG: 214,
             fillB: 255,
-            glow: "rgba(112, 202, 255, 0.56)"
+            glow: "rgba(112, 202, 255, 0.56)",
+            alphaBoost: 1,
+            glowBoost: 1
           };
     };
 
@@ -237,10 +243,10 @@ export function AmbientParticles({
 
         ctx.save();
         if (p.depth > 0.7) {
-          ctx.shadowBlur = p.glow * pulse;
+          ctx.shadowBlur = p.glow * pulse * palette.glowBoost;
           ctx.shadowColor = palette.glow;
         }
-        ctx.fillStyle = `rgba(${palette.fillR}, ${palette.fillG}, ${palette.fillB}, ${alpha})`;
+        ctx.fillStyle = `rgba(${palette.fillR}, ${palette.fillG}, ${palette.fillB}, ${alpha * palette.alphaBoost})`;
         ctx.globalAlpha = opacity;
         ctx.beginPath();
         ctx.arc(drawX, drawY, radius, 0, Math.PI * 2);

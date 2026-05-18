@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="section-shell relative z-10 pb-8 text-xs theme-muted">
       <div className="flex flex-wrap items-center justify-between gap-2 border-t pt-5 theme-border">
-        <p>© {new Date().getFullYear()} Nash. Crafted for support engineering role.</p>
+        <p>© {new Date().getFullYear()} Nasheen</p>
         <div className="flex items-center gap-4">
           <a
             href="https://github.com/mohd-nasheen"
