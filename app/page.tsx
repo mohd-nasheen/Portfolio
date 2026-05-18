@@ -23,7 +23,7 @@ const projects: ProjectItem[] = [
   {
     label: "Case Study",
     title: "Support-to-Product Signal Pipeline",
-    impact: "Lifted issue-to-fix cycle time by 34% across high-volume accounts.",
+    impact: "Lifted issue-to-fix cycle time by 75% across high-volume accounts.",
     summary:
       "Created a structured feedback pipeline between support, engineering, and product to prioritize customer pain with technical context.",
     tags: ["Product Ops", "Linear", "SLA Triage", "Root Cause Analysis"],
@@ -32,29 +32,29 @@ const projects: ProjectItem[] = [
   {
     label: "Case Study",
     title: "AI-Powered Troubleshooting Assistant",
-    impact: "Cut repetitive L1 investigation effort by 40% for recurring incidents.",
+    impact: "Cut repetitive L1 investigation effort by 80% for incoming tickets.",
     summary:
-      "Prototyped an internal retrieval assistant that mapped logs, playbooks, and known fixes into guided triage decisions for faster escalation.",
+      "Prototyped an internal retrieval assistant that transformed playbooks and known fixes into guided triage workflows for faster escalation and resolution.",
     tags: ["AI Workflows", "Knowledge Ops", "Support Engineering", "Prompt Design"],
     accent: "from-emerald-400/30 via-teal-500/20 to-transparent"
   },
   {
-    label: "Personal Project",
-    title: "Arsh Group Digital Experience",
+    label: "Client Project",
+    title: "Arsh Group Interior Website",
     impact: "Designed and shipped a motion-first interactive web experience.",
     summary:
       "Built a premium responsive web platform focused on modern UI systems, smooth interactions, immersive frontend experiences, and scalable component architecture.",
     tags: ["NEXT.JS", "TAILWIND", "FRAMER MOTION", "UI SYSTEMS", "RESPONSIVE DESIGN"],
     accent: "from-sky-400/28 via-cyan-500/20 to-transparent",
-    link: "https://github.com/mohd-nasheen/arshgroup-website"
+    link: "https://mohd-nasheen.github.io/arshgroup-website"
   },
   {
     label: "In Development",
-    title: "Stealth AI Outfit Platform",
+    title: "Stealth Product Build",
     impact: "Exploring AI-assisted workflow intelligence for modern digital operations.",
     summary:
-      "Building an experimental platform focused on intelligent outfit generation, workflow automation, personalization systems, and AI-assisted user experiences.",
-    tags: ["AI SYSTEMS", "AUTOMATION", "PERSONALIZATION", "LLM", "STEALTH MODE"],
+      "Developing a private product exploring customer-centric, personalization systems, and AI-assisted user experiences.",
+    tags: ["AI Enablement", "User Experience", "PERSONALIZATION", "LLM", "STEALTH MODE"],
     accent: "from-indigo-400/26 via-violet-500/18 to-transparent",
     privateStatus: "Private Build"
   }
